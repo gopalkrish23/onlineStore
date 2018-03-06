@@ -1,0 +1,9 @@
+<p>
+  category works!
+</p>
+<table *ngIf="categVisible">
+	<tr *ngFor="let cat of categ"><td>
+		<a [routerLink]="[cat.name]">{{cat.name}}</a>
+	</td></tr>
+</table>
+

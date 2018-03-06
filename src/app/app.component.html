@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+    A login page is create to login and the login details are stored in the local storage. The username is displayed in all pages using service.
+    
+    <br/>
+    Then the various categories in the store is given. We have to choose whatever we want from corresponding category. We have the option either to buy it now or save it later to buy using buy/add to cart button. Once an item is added to add to cart it is not added again due to disability function. The cart count is added in each item we add and it is simultaneously counted using service.
+
+</div>
+
+<p *ngIf="loggedid==null">
+	<a href="" (click)="signup=true">Signup{{signup}}</a>
+	<a href="" (click)="signup=false">Login{{signup}}</a>
+	
+
+	<app-signup *ngIf="signup!=false"></app-signup>
+	<app-login *ngIf="signup==false" (outputEv)="loggedid=$event"></app-login>
+</p>
+<pre *ngIf="loggedid!=null">
+
+	<a routerLink="category">category</a>
+</pre>
+<router-outlet></router-outlet>

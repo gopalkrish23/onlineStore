@@ -1,0 +1,12 @@
+<h3>Signup</h3>
+	<form #reg='ngForm' (ngSubmit)="signup(reg.value)">
+		<div>
+			<input placeholder="name" name="username" ngModel></div>
+		<br/><div>
+			<input type="password" placeholder="password" name="pwd" ngModel>
+		</div>
+		<br/><div>
+			<input type="password" placeholder="confirm password" name="cpwd" ngModel>
+		</div><br/>
+			<input type="submit">
+	</form>

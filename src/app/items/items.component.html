@@ -1,0 +1,20 @@
+<p>
+  comp works!{{ph}}
+</p>
+<div>
+  <ul class="list-group">
+    <li *ngFor="let nme of names"><a [routerLink]="['details',nme.name]">{{nme.name}}</a></li>
+
+  </ul>
+  <router-outlet></router-outlet>
+</div>
+<p>
+  items works!{{ph}}
+</p>
+<div>
+  <ul class="list-group">
+    <li *ngFor="let nme of names"><a [routerLink]="['details',nme.name]">{{nme.name}}</a></li>
+
+  </ul>
+  <router-outlet></router-outlet>
+</div>

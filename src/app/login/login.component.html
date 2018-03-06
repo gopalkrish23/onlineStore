@@ -1,0 +1,10 @@
+<h3> Login </h3>
+<div>
+<form #logn='ngForm' (ngSubmit)="login(logn.value)">
+	
+	<input placeholder="username" name="uname" ngModel>
+	<input type="password" placeholder="password" name="pwd" ngModel>
+	<input type="submit">
+</form>
+<pre *ngFor="let data of userdata">{{data.username}}</pre>
+</div>
